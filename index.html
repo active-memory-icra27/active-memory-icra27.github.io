@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Never-Ending Information — ICRA 2027 Workshop</title>
+  <meta name="description" content="ICRA 2027 workshop, Seoul: what should a robot remember, update, share, or forget over a lifetime of deployment?">
+  <meta property="og:title" content="Never-Ending Information: Robot Active Lifelong Memory Management">
+  <meta property="og:description" content="ICRA 2027 workshop, Seoul: what should a robot remember, update, share, or forget?">
+  <meta property="og:image" content="assets/img/logo.png">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@600;700&family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══ Sticky nav ═══ -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">
+        <img src="assets/img/favicon.png" alt="">
+        Never-Ending Information <small>ICRA 2027</small>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#board">Memory Board</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#cfp">Call for Papers</a>
+        <a href="#dates">Dates</a>
+        <a href="#organizers">Organizers</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══ Hero ═══ -->
+  <header class="hero" id="hero">
+    <div class="hero-inner">
+    <h1 class="hero-art">
+      <img src="assets/img/logo.webp" class="hero-logo" width="1400" height="1058"
+           alt="Never-Ending Information: Robot Active Lifelong Memory Management">
+    </h1>
+    <div class="hero-text">
+    <a class="hero-conf" href="https://2027.ieee-icra.org/" target="_blank" rel="noopener">
+      <img src="assets/img/icra2027-logo.webp" width="1536" height="322" alt="ICRA 2027, IEEE International Conference on Robotics and Automation, Seoul">
+    </a>
+    <div class="hero-eyebrow">
+      <span class="pill">ICRA 2027 Workshop</span>
+      <span class="pill outline">Full day · In person</span>
+    </div>
+    <p class="hero-sub">What information should a robot acquire, retain, learn from, and forget as the world changes?</p>
+    <ul class="hero-meta">
+      <!-- TODO: fill in exact day and room once ICRA 2027 publishes the workshop allocation -->
+      <li><span class="meta-label">Date</span>May 24–28, 2027 (day TBA)</li>
+      <li><span class="meta-label">Room</span>TBA</li>
+      <li><span class="meta-label">Location</span>COEX, Seoul</li>
+    </ul>
+    <div class="hero-links">
+      <a class="btn primary" href="#cfp">Call for Papers</a>
+      <a class="btn accent" href="https://memory-board-icra.davidmorillacabello.com/" target="_blank" rel="noopener">Memory Board ↗</a>
+      <a class="btn" href="mailto:activememoryicra27@gmail.com">Contact Us</a>
+    </div>
+    </div>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <!-- ═══ About ═══ -->
+    <section class="section" id="about">
+      <span class="section-kicker">About</span>
+      <h2 class="section-title">Why Active Memory Management?</h2>
+
+      <div class="why-grid">
+        <div class="why">
+          <h3>Motivation</h3>
+          <p>Robots operating for days or months must decide which experience remains useful as environments and tasks change, since keeping every observation is neither scalable nor sufficient. <strong>Lifelong active memory management</strong> asks what information to acquire, represent, retain, update, share, or forget under limited storage, computation, and communication.</p>
+        </div>
+        <div class="why">
+          <h3>Timeliness</h3>
+          <p>Robots are moving towards sustained long-term deployment in changing environments, while vision-language models and embodied agents bring richer learned representations into robotic reasoning. Their finite context windows limit the observation history they can use, and robot fleets add the need to reconcile and exchange knowledge.</p>
+        </div>
+      </div>
+
+      <div class="theme-grid">
+        <article class="theme-card t1">
+          <span class="theme-num">1</span>
+          <h3>Useful Memory</h3>
+          <p>How a robot should structure, manage, and use gathered information to support reasoning, planning, and continual learning.</p>
+        </article>
+        <article class="theme-card t2">
+          <span class="theme-num">2</span>
+          <h3>Active Maintenance</h3>
+          <p>How a robot should act to acquire relevant information and maintain an updated understanding of the world as it changes.</p>
+        </article>
+        <article class="theme-card t3">
+          <span class="theme-num">3</span>
+          <h3>Collective Memory</h3>
+          <p>What robots in a fleet should share, reconcile, or keep local.</p>
+        </article>
+      </div>
+      <p class="cross-cut">We further ask what evaluation protocols and setups are required to validate task performance and adaptation for these questions.</p>
+    </section>
+
+    <!-- ═══ Memory board ═══ -->
+    <section class="section" id="board">
+      <span class="section-kicker">Participate</span>
+      <h2 class="section-title">The Memory Board</h2>
+      <p class="section-subtitle">Share your ideas, experiences, and open questions. Together, we'll build the workshop's memory and see what it can answer.</p>
+
+      <div class="board-wrap">
+        <ol class="board-flow">
+          <li>
+            <h4>Notes</h4>
+            <p>General insights, ideas, deployment cases, and failure examples worth retaining.</p>
+          </li>
+          <li>
+            <h4>Questions</h4>
+            <p>Open questions you would like the record to answer.</p>
+          </li>
+          <li>
+            <h4>Search and cluster</h4>
+            <p>Semantic search and clustering link entries to the workshop themes and to one another.</p>
+          </li>
+          <li>
+            <h4>Analyse</h4>
+            <p>The board helps select questions for the panel, and we close the day with a live analysis.</p>
+          </li>
+        </ol>
+        <p>You can add entries before and during the workshop. Afterwards, we will publish the board together with a summary of the main conclusions, unresolved questions, and proposed next steps.</p>
+        <a class="btn accent" href="https://memory-board-icra.davidmorillacabello.com/" target="_blank" rel="noopener">Explore the memory board ↗</a>
+      </div>
+    </section>
+
+    <!-- ═══ Speakers ═══ -->
+    <section class="section" id="speakers">
+      <span class="section-kicker">Program</span>
+      <h2 class="section-title">Invited Speakers</h2>
+            <div class="people-grid">
+        <div class="person-card">
+          <img class="avatar t1" src="assets/img/speakers/harold-soh.jpg" alt="Harold Soh" loading="lazy">
+          <div class="person-name"><a href="http://www.haroldsoh.com/" target="_blank" rel="noopener">Harold Soh</a></div>
+          <div class="person-affil">National University of Singapore</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=lkgd1BsAAAAJ" target="_blank" rel="noopener" aria-label="Harold Soh on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+          </div>
+          <div class="person-talk">Memory Representations for Spatial-Semantic Navigation</div>
+        </div>
+        <div class="person-card">
+          <img class="avatar t2" src="assets/img/speakers/katerina-fragkiadaki.jpg" alt="Katerina Fragkiadaki" loading="lazy">
+          <div class="person-name"><a href="https://www.cs.cmu.edu/~katef/" target="_blank" rel="noopener">Katerina Fragkiadaki</a></div>
+          <div class="person-affil">Carnegie Mellon University</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=FWp7728AAAAJ" target="_blank" rel="noopener" aria-label="Katerina Fragkiadaki on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+          </div>
+          <div class="person-talk">Title TBA</div>
+        </div>
+        <div class="person-card">
+          <img class="avatar t3" src="assets/img/speakers/tanja-kaiser.jpg" alt="Tanja Kaiser" loading="lazy">
+          <div class="person-name"><a href="https://www.utn.de/person/tanja-kaiser/" target="_blank" rel="noopener">Tanja Kaiser</a></div>
+          <div class="person-affil">University of Technology Nuremberg</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=PRc38K4AAAAJ" target="_blank" rel="noopener" aria-label="Tanja Kaiser on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+          </div>
+          <div class="person-talk">Knowledge in Multi-Robot Systems: Information Fusion, Open-Ended Adaptation, and Future Challenges</div>
+        </div>
+        <div class="person-card">
+          <img class="avatar t4" src="assets/img/speakers/jeannette-bohg.jpg" alt="Jeannette Bohg" loading="lazy">
+          <div class="person-name"><a href="https://web.stanford.edu/~bohg/" target="_blank" rel="noopener">Jeannette Bohg</a></div>
+          <div class="person-affil">Stanford University</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=rjnJnEkAAAAJ" target="_blank" rel="noopener" aria-label="Jeannette Bohg on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+          </div>
+          <div class="person-talk">Deploying Robots in the Messy Real World: What Does It Take?</div>
+        </div>
+        <div class="person-card">
+          <img class="avatar t3" src="assets/img/speakers/navinda-kottege.jpg" alt="Navinda Kottege" loading="lazy">
+          <div class="person-name"><a href="http://www.navinda.kottege.net/" target="_blank" rel="noopener">Navinda Kottege</a></div>
+          <div class="person-affil">CSIRO</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=OBvDEAMAAAAJ" target="_blank" rel="noopener" aria-label="Navinda Kottege on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+          </div>
+          <div class="person-talk">Remembering a Changing World: Persistent Spatial Intelligence for Robot Teams</div>
+        </div>
+        <div class="person-card">
+          <img class="avatar t1" src="assets/img/speakers/nima-fazeli.jpg" alt="Nima Fazeli" loading="lazy">
+          <div class="person-name"><a href="https://www.mmintlab.com/people/nima-fazeli/" target="_blank" rel="noopener">Nima Fazeli</a></div>
+          <div class="person-affil">University of Michigan</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=fE3FSqIAAAAJ" target="_blank" rel="noopener" aria-label="Nima Fazeli on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+          </div>
+          <div class="person-talk">What Should Robots Remember? Designing Memory for Generalist Robot Policies</div>
+        </div>
+        <!-- Pending confirmation — uncomment once confirmed
+        <div class="person-card">
+          <img class="avatar t2" src="assets/img/speakers/ali-agha.jpg" alt="Ali Agha" loading="lazy">
+          <div class="person-name"><a href="https://aliagha.site/" target="_blank" rel="noopener">Ali Agha</a></div>
+          <div class="person-affil">Field AI</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=36qnUD4AAAAJ" target="_blank" rel="noopener" aria-label="Ali Agha on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+          </div>
+          <div class="person-talk">Title TBA</div>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <!-- ═══ Schedule ═══ -->
+    <section class="section" id="schedule">
+      <span class="section-kicker">Program</span>
+      <h2 class="section-title">Schedule</h2>
+      <p class="section-subtitle">All times are local and tentative.</p>
+      <div class="schedule-legend">
+        <span class="lg-talk">Invited talk</span>
+        <span class="lg-papers">Contributed papers</span>
+        <span class="lg-interactive">Interactive</span>
+        <span class="lg-break">Break</span>
+      </div>
+      <div class="table-wrap">
+        <table class="schedule">
+          <thead>
+            <tr><th>Time</th><th>Session</th></tr>
+          </thead>
+          <tbody>
+            <tr class="interactive"><td>08:30 – 08:45</td><td>Welcome &amp; memory board intro</td></tr>
+            <tr class="talk"><td>08:45 – 09:15</td><td><span class="slot-speaker">Harold Soh</span> <span class="slot-affil">· NUS</span><span class="slot-title">Memory Representations for Spatial-Semantic Navigation</span></td></tr>
+            <tr class="talk"><td>09:15 – 09:45</td><td><span class="slot-speaker">Katerina Fragkiadaki</span> <span class="slot-affil">· CMU</span><span class="slot-title">Title TBA</span></td></tr>
+            <tr class="talk"><td>09:45 – 10:15</td><td><span class="slot-speaker">Tanja Kaiser</span> <span class="slot-affil">· UTN</span><span class="slot-title">Knowledge in Multi-Robot Systems: Information Fusion, Open-Ended Adaptation, and Future Challenges</span></td></tr>
+            <tr class="interactive"><td>10:15 – 11:15</td><td>Coffee &amp; breakout groups</td></tr>
+            <tr class="papers"><td>11:15 – 11:45</td><td>Spotlight talks</td></tr>
+            <tr class="papers"><td>11:45 – 12:30</td><td>Posters &amp; memory board</td></tr>
+            <tr class="break"><td>12:30 – 13:30</td><td>Lunch</td></tr>
+            <tr class="talk"><td>13:30 – 14:00</td><td><span class="slot-speaker">Jeannette Bohg</span> <span class="slot-affil">· Stanford</span><span class="slot-title">Deploying Robots in the Messy Real World: What Does It Take?</span></td></tr>
+            <tr class="talk"><td>14:00 – 14:30</td><td><span class="slot-speaker">Navinda Kottege</span> <span class="slot-affil">· CSIRO</span><span class="slot-title">Remembering a Changing World: Persistent Spatial Intelligence for Robot Teams</span></td></tr>
+            <tr class="talk"><td>14:30 – 15:00</td><td><span class="slot-speaker">Nima Fazeli</span> <span class="slot-affil">· University of Michigan</span><span class="slot-title">What Should Robots Remember? Designing Memory for Generalist Robot Policies</span></td></tr>
+            <tr class="talk"><td>15:00 – 15:30</td><td><span class="slot-speaker">Invited talk</span> <span class="slot-affil">· TBA</span></td></tr>
+            <tr class="break"><td>15:30 – 16:15</td><td>Coffee &amp; posters</td></tr>
+            <tr class="interactive"><td>16:15 – 16:45</td><td>Breakout reports</td></tr>
+            <tr class="interactive"><td>16:45 – 17:30</td><td>Panel with industry and applied research speakers</td></tr>
+            <tr class="interactive"><td>17:30 – 18:00</td><td>Live memory board analysis, awards, and closing remarks</td></tr>
+            <tr class="break"><td>18:00 – 19:00</td><td>Networking and social gathering</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ═══ Call for papers ═══ -->
+    <section class="section" id="cfp">
+      <span class="section-kicker">Contribute</span>
+      <h2 class="section-title">Call for Contributions</h2>
+      <p class="section-subtitle">We invite non-archival extended abstracts in two categories. We especially welcome failure cases: assumptions that break over time, or cases where retaining information hurts downstream performance.</p>
+
+      <div class="track-grid">
+        <div class="track-card t1">
+          <span class="track-pages">2–4 pages</span>
+          <h3>Research</h3>
+          <p>Short papers and work-in-progress results, particularly from early-career researchers.</p>
+        </div>
+        <div class="track-card t2">
+          <span class="track-pages">1–2 pages</span>
+          <h3>Deployment Reports</h3>
+          <p>Experience from long-term deployments, including what did not work, particularly from experienced roboticists.</p>
+        </div>
+      </div>
+
+      <h3 class="sub-head">Topics include</h3>
+      <ul class="topic-list">
+        <li>Memory and map representations for reasoning and planning</li>
+        <li>Long-term mapping in changing environments</li>
+        <li>Active perception and information gathering</li>
+        <li>Continual learning on deployed robots</li>
+        <li>Memory for VLMs, VLAs, and embodied agents</li>
+        <li>Forgetting and compression under resource budgets</li>
+        <li>Multi-robot knowledge sharing</li>
+        <li>Benchmarks and evaluation for lifelong memory</li>
+      </ul>
+
+      <div class="info-cards">
+        <div class="info-card">
+          <h3 class="sub-head">Submission</h3>
+          <ul class="info-list">
+            <!-- TODO: add OpenReview link once the venue is created -->
+            <li>Via <strong>OpenReview</strong> (link soon)</li>
+            <li><strong>2–4 pages</strong> (research) or <strong>1–2 pages</strong> (reports), excluding references</li>
+            <li>The workshop is <strong>non-archival</strong>, so you can still publish your work elsewhere</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3 class="sub-head">Presentation</h3>
+          <ul class="info-list">
+            <li>Up to <strong>30 posters</strong> and <strong>6 spotlight talks</strong></li>
+            <li>Each submission receives two reviews</li>
+            <li>Authors are asked to add their key insights to the memory board</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="sub-head">Awards &amp; Travel Grant</h3>
+      <div class="award-grid">
+        <div class="award">
+          <div class="amount">TBA</div>
+          <h4>Best Research Contribution</h4>
+        </div>
+        <div class="award">
+          <div class="amount">TBA</div>
+          <h4>Best Deployment Insight</h4>
+        </div>
+        <div class="award">
+          <div class="amount">TBA</div>
+          <h4>Travel Grant</h4>
+          <p>For a student or early-career author. More details soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Dates ═══ -->
+    <section class="section" id="dates">
+      <span class="section-kicker">Timeline</span>
+      <h2 class="section-title">Important Dates</h2>
+      <p class="section-subtitle">All deadlines are 23:59 AoE (<a href="https://www.timeanddate.com/time/zones/aoe" target="_blank" rel="noopener">Anywhere on Earth</a>).</p>
+      <!-- TODO: set dates once the ICRA 2027 workshop day is fixed -->
+      <div class="date-grid">
+        <div class="date-block">
+          <div class="date-day">TBA</div>
+          <div class="date-year">2027</div>
+          <div class="date-label">Submission</div>
+        </div>
+        <div class="date-block">
+          <div class="date-day">TBA</div>
+          <div class="date-year">2027</div>
+          <div class="date-label">Notification</div>
+        </div>
+        <div class="date-block">
+          <div class="date-day">TBA</div>
+          <div class="date-year">2027</div>
+          <div class="date-label">Camera-Ready</div>
+        </div>
+        <div class="date-block highlight">
+          <div class="date-day">May 24–28</div>
+          <div class="date-year">2027 · Seoul</div>
+          <div class="date-label">Workshop <span class="tag">Day TBA</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Organizers ═══ -->
+    <section class="section" id="organizers">
+      <span class="section-kicker">Team</span>
+      <h2 class="section-title">Organizers</h2>
+      <div class="people-grid compact">
+        <div class="person-card">
+          <img class="avatar t1" src="assets/img/organizers/marija-popovic.jpg" alt="Marija Popović" loading="lazy">
+          <div class="person-name"><a href="https://www.tudelft.nl/en/staff/m.popovic/" target="_blank" rel="noopener">Marija Popović</a></div>
+          <div class="person-affil">TU Delft</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=XON8iQoAAAAJ" target="_blank" rel="noopener" aria-label="Marija Popović on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+            <a href="mailto:m.popovic@tudelft.nl" aria-label="Email Marija Popović" title="m.popovic@tudelft.nl"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg></a>
+          </div>
+        </div>
+        <div class="person-card">
+          <img class="avatar t2" src="assets/img/organizers/david-morilla-cabello.jpg" alt="David Morilla-Cabello" loading="lazy">
+          <div class="person-name"><a href="https://dvdmc.github.io/" target="_blank" rel="noopener">David Morilla-Cabello</a></div>
+          <div class="person-affil">University of Zaragoza</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=otkGmaAAAAAJ" target="_blank" rel="noopener" aria-label="David Morilla-Cabello on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+            <a href="mailto:davidm@unizar.es" aria-label="Email David Morilla-Cabello" title="davidm@unizar.es"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg></a>
+          </div>
+        </div>
+        <div class="person-card">
+          <img class="avatar t3" src="assets/img/organizers/moji-shi.jpg" alt="Moji Shi" loading="lazy">
+          <div class="person-name"><a href="https://smoggy-p.github.io/" target="_blank" rel="noopener">Moji Shi</a></div>
+          <div class="person-affil">TU Delft</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=NZ2lZY0AAAAJ" target="_blank" rel="noopener" aria-label="Moji Shi on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+            <a href="mailto:m.shi@tudelft.nl" aria-label="Email Moji Shi" title="m.shi@tudelft.nl"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg></a>
+          </div>
+        </div>
+        <div class="person-card">
+          <img class="avatar t4" src="assets/img/organizers/jiwoo-kim.jpg" alt="Jiwoo Kim" loading="lazy">
+          <div class="person-name"><a href="https://fair.kaist.ac.kr/people/members/" target="_blank" rel="noopener">Jiwoo Kim</a></div>
+          <div class="person-affil">KAIST</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=vAd54sgAAAAJ" target="_blank" rel="noopener" aria-label="Jiwoo Kim on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+            <a href="mailto:tars0523@kaist.ac.kr" aria-label="Email Jiwoo Kim" title="tars0523@kaist.ac.kr"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg></a>
+          </div>
+        </div>
+        <div class="person-card">
+          <img class="avatar t1" src="assets/img/organizers/lukas-schmid.jpg" alt="Lukas Schmid" loading="lazy">
+          <div class="person-name"><a href="https://schmluk.github.io/" target="_blank" rel="noopener">Lukas Schmid</a></div>
+          <div class="person-affil">University of Technology Nuremberg</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=r79fGI0AAAAJ" target="_blank" rel="noopener" aria-label="Lukas Schmid on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+            <a href="mailto:lukas.schmid@utn.de" aria-label="Email Lukas Schmid" title="lukas.schmid@utn.de"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg></a>
+          </div>
+        </div>
+        <div class="person-card">
+          <img class="avatar t2" src="assets/img/organizers/nikolay-atanasov.jpg" alt="Nikolay Atanasov" loading="lazy">
+          <div class="person-name"><a href="https://natanaso.github.io/" target="_blank" rel="noopener">Nikolay Atanasov</a></div>
+          <div class="person-affil">UC San Diego</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=RTkSatQAAAAJ" target="_blank" rel="noopener" aria-label="Nikolay Atanasov on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+            <a href="mailto:natanasov@ucsd.edu" aria-label="Email Nikolay Atanasov" title="natanasov@ucsd.edu"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg></a>
+          </div>
+        </div>
+        <div class="person-card">
+          <img class="avatar t3" src="assets/img/organizers/guillaume-sartoretti.jpg" alt="Guillaume Sartoretti" loading="lazy">
+          <div class="person-name"><a href="https://www.marmotlab.org/" target="_blank" rel="noopener">Guillaume Sartoretti</a></div>
+          <div class="person-affil">National University of Singapore</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=n7NzZ0sAAAAJ" target="_blank" rel="noopener" aria-label="Guillaume Sartoretti on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+            <a href="mailto:guillaume.sartoretti@nus.edu.sg" aria-label="Email Guillaume Sartoretti" title="guillaume.sartoretti@nus.edu.sg"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg></a>
+          </div>
+        </div>
+        <div class="person-card">
+          <img class="avatar t4" src="assets/img/organizers/maren-bennewitz.jpg" alt="Maren Bennewitz" loading="lazy">
+          <div class="person-name"><a href="https://www.hrl.uni-bonn.de/Members/maren" target="_blank" rel="noopener">Maren Bennewitz</a></div>
+          <div class="person-affil">University of Bonn</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=lqjRbXgAAAAJ" target="_blank" rel="noopener" aria-label="Maren Bennewitz on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+            <a href="mailto:maren@cs.uni-bonn.de" aria-label="Email Maren Bennewitz" title="maren@cs.uni-bonn.de"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg></a>
+          </div>
+        </div>
+        <div class="person-card">
+          <img class="avatar t1" src="assets/img/organizers/luca-carlone.jpg" alt="Luca Carlone" loading="lazy">
+          <div class="person-name"><a href="https://lucacarlone.mit.edu/" target="_blank" rel="noopener">Luca Carlone</a></div>
+          <div class="person-affil">MIT</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=U4kKRdMAAAAJ" target="_blank" rel="noopener" aria-label="Luca Carlone on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+            <a href="mailto:lcarlone@mit.edu" aria-label="Email Luca Carlone" title="lcarlone@mit.edu"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg></a>
+          </div>
+        </div>
+        <div class="person-card">
+          <img class="avatar t2" src="assets/img/organizers/hyondong-oh.jpg" alt="Hyondong Oh" loading="lazy">
+          <div class="person-name"><a href="https://fair.kaist.ac.kr/" target="_blank" rel="noopener">Hyondong Oh</a></div>
+          <div class="person-affil">KAIST</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=q_Pbm3kAAAAJ" target="_blank" rel="noopener" aria-label="Hyondong Oh on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+            <a href="mailto:h.oh@kaist.ac.kr" aria-label="Email Hyondong Oh" title="h.oh@kaist.ac.kr"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg></a>
+          </div>
+        </div>
+        <div class="person-card">
+          <img class="avatar t3" src="assets/img/organizers/jen-jen-chung.jpg" alt="Jen Jen Chung" loading="lazy">
+          <div class="person-name"><a href="https://eecs.uq.edu.au/node/8084" target="_blank" rel="noopener">Jen Jen Chung</a></div>
+          <div class="person-affil">University of Queensland</div>
+          <div class="person-links">
+            <a href="https://scholar.google.com/citations?user=FpzRM5UAAAAJ" target="_blank" rel="noopener" aria-label="Jen Jen Chung on Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg></a>
+            <a href="mailto:jenjen.chung@uq.edu.au" aria-label="Email Jen Jen Chung" title="jenjen.chung@uq.edu.au"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Support ═══ -->
+    <section class="section" id="support">
+      <div class="support">
+        <img class="support-logo" src="assets/img/ieee-ras-logo.png" width="300" height="118" alt="IEEE Robotics and Automation Society">
+        <p>Supported by the <strong>IEEE RAS TC Working Group on Active Perception and Exploration</strong>, which funds the awards, travel grant, and social event.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <img src="assets/img/favicon.png" alt="">
+      <div>
+        <div class="footer-title">Never-Ending Information</div>
+        <div class="footer-sub">Robot Active Lifelong Memory Management · <a href="https://2027.ieee-icra.org/" target="_blank" rel="noopener">ICRA 2027</a> Workshop · Seoul</div>
+      </div>
+      <div class="footer-contact">Questions? <a href="mailto:activememoryicra27@gmail.com">activememoryicra27@gmail.com</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

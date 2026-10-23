@@ -1,0 +1,5 @@
+# Source / private files — not part of the website
+*.pdf
+*.af
+*.af~lock~
+/logo.png
